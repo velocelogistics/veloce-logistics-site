@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request a Quote | Velocè Logistics</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo-area">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Velocè Logistics Logo" class="logo" />
+      </a>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="quote.html" class="nav-active">Quote</a>
+    </nav>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="subpage-hero">
+    <h1>Request a Delivery Quote</h1>
+    <p>
+      Tell us what you need delivered and we’ll send back a tailored quote with timing, pricing, and availability.
+    </p>
+  </section>
+
+  <!-- QUOTE FORM SECTION -->
+  <section>
+    <div class="subpage-content quote-grid">
+
+      <!-- LEFT SIDE INFO -->
+      <div class="quote-info">
+        <h2>How Quotes Work</h2>
+        <p>
+          Velocè Logistics offers custom pricing based on distance, urgency, package size, and delivery type.
+          Once you submit your request:
+        </p>
+
+        <ul class="about-list">
+          <li>We review your pickup & drop-off locations</li>
+          <li>We confirm timing & availability</li>
+          <li>We calculate a fair, transparent rate</li>
+          <li>You receive a response within minutes (during business hours)</li>
+        </ul>
+
+        <p>
+          For urgent same-day or after-hours jobs, please call us directly after submitting the form.
+        </p>
+      </div>
+
+      <!-- RIGHT SIDE FORM -->
+      <div class="quote-form">
+        <form>
+          <label for="name">Full Name</label>
+          <input id="name" type="text" placeholder="Your name" required />
+
+          <label for="company">Company (optional)</label>
+          <input id="company" type="text" placeholder="Your company" />
+
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="you@example.com" required />
+
+          <label for="phone">Phone</label>
+          <input id="phone" type="tel" placeholder="(555) 123-4567" required />
+
+          <label for="pickup">Pickup Address</label>
+          <input id="pickup" type="text" placeholder="Street, City, ZIP" required />
+
+          <label for="dropoff">Drop-off Address</label>
+          <input id="dropoff" type="text" placeholder="Street, City, ZIP" required />
+
+          <label for="package">Package Details</label>
+          <textarea id="package" rows="4" placeholder="Weight, size, number of items, special handling..."></textarea>
+
+          <label for="timing">When does it need to arrive?</label>
+          <select id="timing" required>
+            <option value="">Select delivery speed...</option>
+            <option>Same-Day (Urgent)</option>
+            <option>2–4 Hour Window</option>
+            <option>Next-Day Delivery</option>
+            <option>Scheduled / Specific Date</option>
+            <option>Recurring Route Delivery</option>
+          </select>
+
+          <label for="notes">Additional Notes</label>
+          <textarea id="notes" rows="3" placeholder="Any additional information or instructions..."></textarea>
+
+          <button type="submit" class="cta-button">Submit Quote Request</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Velocè Logistics — All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
