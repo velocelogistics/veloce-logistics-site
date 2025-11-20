@@ -2,101 +2,101 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Delivery Request | Velocè Logistics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
 </head>
-
 <body>
 
-<header class="header">
-  <div class="logo-area">
-    <a href="index.html"><img src="images/logo.png" class="logo" /></a>
-  </div>
-  <nav class="nav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="quote.html">Quote</a>
-    <a href="delivery.html" class="nav-active">Delivery Request</a>
-  </nav>
-</header>
-
-<section class="subpage-hero">
-  <h1>Schedule a Delivery</h1>
-  <p>Submit the details for your delivery and our team will dispatch a driver right away.</p>
-</section>
-
-<section>
-  <div class="subpage-content quote-grid">
-
-    <div class="quote-info">
-      <h2>Fast. Easy. Reliable.</h2>
-      <p>Use this form to request an immediate or scheduled delivery. Once submitted:</p>
-
-      <ul class="about-list">
-        <li>A driver is assigned instantly</li>
-        <li>You receive confirmation + tracking</li>
-        <li>Your package is picked up and delivered on time</li>
-      </ul>
-
-      <p>If this is urgent, call after submitting.</p>
+  <!-- HEADER -->
+  <div class="header">
+    <div class="logo-wrap">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Velocè Logistics Logo" class="logo" />
+      </a>
     </div>
-
-    <div class="quote-form">
-      <form>
-        <h3>Pickup Information</h3>
-
-        <label>Pickup Name</label>
-        <input type="text" required>
-
-        <label>Pickup Address</label>
-        <input type="text" placeholder="Street, City, ZIP" required>
-
-        <label>Pickup Phone</label>
-        <input type="tel" required>
-
-        <hr style="margin: 20px 0; opacity: .3;">
-
-        <h3>Drop-off Information</h3>
-
-        <label>Recipient Name</label>
-        <input type="text" required>
-
-        <label>Drop-off Address</label>
-        <input type="text" placeholder="Street, City, ZIP" required>
-
-        <label>Recipient Phone</label>
-        <input type="tel" required>
-
-        <hr style="margin: 20px 0; opacity: .3;">
-
-        <h3>Package Details</h3>
-
-        <label>Package Description</label>
-        <textarea rows="3" placeholder="Weight, dimensions, number of items…" required></textarea>
-
-        <label>Delivery Timing</label>
-        <select required>
-          <option value="">Select timing…</option>
-          <option>Immediate Dispatch</option>
-          <option>2–4 Hour Window</option>
-          <option>Same-Day Delivery</option>
-          <option>Scheduled Date/Time</option>
-        </select>
-
-        <label>Additional Instructions</label>
-        <textarea rows="3"></textarea>
-
-        <button class="cta-button">Submit Delivery Request</button>
-      </form>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="coverage.html">Coverage</a>
+      <a href="contact.html">Contact</a>
+      <a href="quote.html">Quote</a>
     </div>
   </div>
-</section>
 
-<footer class="footer">
-  <p>© 2025 Velocè Logistics — All Rights Reserved</p>
-</footer>
+  <!-- SUBPAGE HERO -->
+  <section class="sub-hero sub-hero-city">
+    <div class="sub-hero-overlay"></div>
+    <div class="sub-hero-content">
+      <h1>Delivery Request</h1>
+      <p>Submit delivery details for one-time or scheduled service.</p>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <section class="subpage-section">
+    <div class="subpage-inner two-column-grid">
+
+      <div class="col-left">
+        <h2>How We Handle Requests</h2>
+        <p>
+          Use this form to share information about an upcoming shipment or one-time delivery need.
+          A member of our team will review your request and confirm details, timing, and availability.
+        </p>
+        <ul>
+          <li>Ideal for special projects or one-off shipments.</li>
+          <li>Use our quote form for larger ongoing route coverage.</li>
+          <li>We’ll follow up by email or phone with next steps.</li>
+        </ul>
+      </div>
+
+      <div class="col-right form-card">
+        <h3>Delivery Request Form</h3>
+
+        <form>
+          <label for="req-company">Company Name</label>
+          <input type="text" id="req-company" name="req-company" />
+
+          <label for="req-contact">Contact Name</label>
+          <input type="text" id="req-contact" name="req-contact" />
+
+          <label for="req-email">Email</label>
+          <input type="email" id="req-email" name="req-email" />
+
+          <label for="req-phone">Phone</label>
+          <input type="tel" id="req-phone" name="req-phone" />
+
+          <label for="req-origin">Pickup Location</label>
+          <input type="text" id="req-origin" name="req-origin" />
+
+          <label for="req-destination">Delivery Location</label>
+          <input type="text" id="req-destination" name="req-destination" />
+
+          <label for="req-date">Requested Date</label>
+          <input type="date" id="req-date" name="req-date" />
+
+          <label for="req-details">Shipment Details</label>
+          <textarea id="req-details" name="req-details" placeholder="Describe freight, parcel counts, timing, or any special handling needs."></textarea>
+
+          <button type="submit" class="cta-button">Submit Request</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div class="footer-links">
+    <a href="delivery.html">Delivery Request</a>
+    <span> | </span>
+    <a href="faq.html">FAQ</a>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Velocè Logistics. All rights reserved.</p>
+  </div>
 
 </body>
 </html>

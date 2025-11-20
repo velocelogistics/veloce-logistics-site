@@ -2,107 +2,105 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Request a Quote | Velocè Logistics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
 </head>
-
 <body>
 
   <!-- HEADER -->
-  <header class="header">
-    <div class="logo-area">
+  <div class="header">
+    <div class="logo-wrap">
       <a href="index.html">
         <img src="images/logo.png" alt="Velocè Logistics Logo" class="logo" />
       </a>
     </div>
-    <nav class="nav">
+    <div class="nav">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
+      <a href="coverage.html">Coverage</a>
       <a href="contact.html">Contact</a>
       <a href="quote.html" class="nav-active">Quote</a>
-    </nav>
-  </header>
+    </div>
+  </div>
 
-  <!-- PAGE HERO -->
-  <section class="subpage-hero">
-    <h1>Request a Delivery Quote</h1>
-    <p>
-      Tell us what you need delivered and we’ll send back a tailored quote with timing, pricing, and availability.
-    </p>
-  </section>
-
-  <!-- QUOTE FORM SECTION -->
-  <section>
-    <div class="subpage-content quote-grid">
-
-      <!-- LEFT SIDE INFO -->
-      <div class="quote-info">
-        <h2>How Quotes Work</h2>
-        <p>
-          Velocè Logistics offers custom pricing based on distance, urgency, package size, and delivery type.
-          Once you submit your request:
-        </p>
-
-        <ul class="about-list">
-          <li>We review your pickup & drop-off locations</li>
-          <li>We confirm timing & availability</li>
-          <li>We calculate a fair, transparent rate</li>
-          <li>You receive a response within minutes (during business hours)</li>
-        </ul>
-
-        <p>
-          For urgent same-day or after-hours jobs, please call us directly after submitting the form.
-        </p>
-      </div>
-
-      <!-- RIGHT SIDE FORM -->
-      <div class="quote-form">
-        <form>
-          <label for="name">Full Name</label>
-          <input id="name" type="text" placeholder="Your name" required />
-
-          <label for="company">Company (optional)</label>
-          <input id="company" type="text" placeholder="Your company" />
-
-          <label for="email">Email</label>
-          <input id="email" type="email" placeholder="you@example.com" required />
-
-          <label for="phone">Phone</label>
-          <input id="phone" type="tel" placeholder="(555) 123-4567" required />
-
-          <label for="pickup">Pickup Address</label>
-          <input id="pickup" type="text" placeholder="Street, City, ZIP" required />
-
-          <label for="dropoff">Drop-off Address</label>
-          <input id="dropoff" type="text" placeholder="Street, City, ZIP" required />
-
-          <label for="package">Package Details</label>
-          <textarea id="package" rows="4" placeholder="Weight, size, number of items, special handling..."></textarea>
-
-          <label for="timing">When does it need to arrive?</label>
-          <select id="timing" required>
-            <option value="">Select delivery speed...</option>
-            <option>Same-Day (Urgent)</option>
-            <option>2–4 Hour Window</option>
-            <option>Next-Day Delivery</option>
-            <option>Scheduled / Specific Date</option>
-            <option>Recurring Route Delivery</option>
-          </select>
-
-          <label for="notes">Additional Notes</label>
-          <textarea id="notes" rows="3" placeholder="Any additional information or instructions..."></textarea>
-
-          <button type="submit" class="cta-button">Submit Quote Request</button>
-        </form>
-      </div>
+  <!-- SUBPAGE HERO -->
+  <section class="sub-hero sub-hero-city">
+    <div class="sub-hero-overlay"></div>
+    <div class="sub-hero-content">
+      <h1>Request a Quote</h1>
+      <p>Share your routes, volume, and requirements for a tailored proposal.</p>
     </div>
   </section>
 
-  <footer class="footer">
-    <p>© 2025 Velocè Logistics — All Rights Reserved</p>
-  </footer>
+  <!-- CONTENT -->
+  <section class="subpage-section">
+    <div class="subpage-inner two-column-grid">
+
+      <div class="col-left">
+        <h2>Partner With Velocè Logistics</h2>
+        <p>
+          Tell us about your delivery needs, carrier contracts, and route coverage
+          requirements. Our team will review your information and prepare a quote
+          or follow-up questions as needed.
+        </p>
+        <ul>
+          <li>Last-mile and final-mile parcel delivery.</li>
+          <li>Contract route coverage for carriers.</li>
+          <li>Regional runs and business-to-business deliveries.</li>
+        </ul>
+      </div>
+
+      <div class="col-right form-card">
+        <h3>Quote Request Form</h3>
+
+        <form>
+          <label for="company">Company Name</label>
+          <input type="text" id="company" name="company" />
+
+          <label for="contactName">Contact Name</label>
+          <input type="text" id="contactName" name="contactName" />
+
+          <label for="contactEmail">Email</label>
+          <input type="email" id="contactEmail" name="contactEmail" />
+
+          <label for="contactPhone">Phone</label>
+          <input type="tel" id="contactPhone" name="contactPhone" />
+
+          <label for="serviceType">Type of Service</label>
+          <select id="serviceType" name="serviceType">
+            <option value="">Select an option</option>
+            <option>Last-Mile Delivery</option>
+            <option>Contract Route Fulfillment</option>
+            <option>Regional / Linehaul</option>
+            <option>Business-to-Business Delivery</option>
+          </select>
+
+          <label for="volume">Estimated Volume</label>
+          <input type="text" id="volume" name="volume" placeholder="Example: 100 stops/day, 5 days/week" />
+
+          <label for="details">Additional Details</label>
+          <textarea id="details" name="details"></textarea>
+
+          <button type="submit" class="cta-button">Request Quote</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div class="footer-links">
+    <a href="delivery.html">Delivery Request</a>
+    <span> | </span>
+    <a href="faq.html">FAQ</a>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Velocè Logistics. All rights reserved.</p>
+  </div>
 
 </body>
 </html>

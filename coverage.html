@@ -2,65 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <title>Coverage Area | Velocè Logistics</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Service Coverage Area | Velocè Logistics</title>
   <link rel="stylesheet" href="styles.css" />
-
-  <style>
-    .coverage-map {
-      width: 100%;
-      height: 350px;
-      background-color: var(--secondary);
-      opacity: .25;
-      border-radius: 10px;
-      margin-top: 20px;
-    }
-  </style>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
 </head>
-
 <body>
 
-<header class="header">
-  <div class="logo-area">
-    <a href="index.html"><img src="images/logo.png" class="logo"></a>
+  <!-- HEADER -->
+  <div class="header">
+    <div class="logo-wrap">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Velocè Logistics Logo" class="logo" />
+      </a>
+    </div>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="coverage.html" class="nav-active">Coverage</a>
+      <a href="contact.html">Contact</a>
+      <a href="quote.html">Quote</a>
+    </div>
   </div>
-  <nav class="nav">
-    <a href="index.html">Home</a>
-    <a href="coverage.html" class="nav-active">Coverage</a>
-    <a href="contracts.html">Contracts</a>
-    <a href="last-mile.html">Last-Mile</a>
-    <a href="services.html">Services</a>
-  </nav>
-</header>
 
-<section class="subpage-hero">
-  <h1>Our Service Coverage Area</h1>
-  <p>Velocè Logistics supports regional and multi-county delivery operations.</p>
-</section>
+  <!-- SUBPAGE HERO -->
+  <section class="sub-hero sub-hero-city">
+    <div class="sub-hero-overlay"></div>
+    <div class="sub-hero-content">
+      <h1>Service Coverage</h1>
+      <p>Regional coverage built to align with carrier station footprints.</p>
+    </div>
+  </section>
 
-<section>
-  <div class="subpage-content">
-    
-    <h2>Service Regions</h2>
-    <ul class="about-list">
-      <li>Metro Delivery Zone — High-density residential & business stops</li>
-      <li>Extended Zone — Suburban areas up to 50 miles out</li>
-      <li>Rural Support Zone — Low-density last-mile service coverage</li>
-      <li>Carrier Partner Routes — Custom assigned territories</li>
-    </ul>
+  <!-- CONTENT -->
+  <section class="subpage-section">
+    <div class="subpage-inner">
+      <h2>Primary Coverage Zones</h2>
+      <p>
+        Velocè Logistics operates in select metropolitan and regional areas. Our coverage footprint is designed
+        to support carrier stations, fulfillment centers, and key commercial corridors.
+      </p>
 
-    <h2>Coverage Map</h2>
-    <div class="coverage-map"></div>
-    <p style="text-align:center; color:var(--primary); margin-top:8px;">
-      Interactive map with live zone overlays coming soon.
-    </p>
+      <ul>
+        <li>Core metropolitan areas with dense route structures.</li>
+        <li>Surrounding suburban and exurban communities.</li>
+        <li>Key commercial and industrial zones.</li>
+      </ul>
 
+      <h2>Custom Coverage Requests</h2>
+      <p>
+        If you are outside our standard coverage area, we may still be able to support limited routes, special
+        projects, or seasonal expansions.
+      </p>
+      <ul>
+        <li>Seasonal peak coverage in adjacent areas.</li>
+        <li>New station launches or pilot programs.</li>
+        <li>Short-term or contract-based expansions.</li>
+      </ul>
+
+      <div class="section-cta">
+        <a href="quote.html" class="cta-button">Discuss Coverage Options</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div class="footer-links">
+    <a href="delivery.html">Delivery Request</a>
+    <span> | </span>
+    <a href="faq.html">FAQ</a>
   </div>
-</section>
 
-<footer class="footer">
-  <p>© 2025 Velocè Logistics — All Rights Reserved</p>
-</footer>
+  <div class="footer">
+    <p>&copy; 2025 Velocè Logistics. All rights reserved.</p>
+  </div>
 
 </body>
 </html>

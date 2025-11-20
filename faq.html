@@ -1,103 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
   <title>FAQ | Velocè Logistics</title>
-  <link rel="stylesheet" href="styles.css">
-
-  <style>
-    /* Accordion styles */
-    .faq-item {
-      background-color: var(--white);
-      padding: 18px 22px;
-      border-radius: 10px;
-      margin-bottom: 16px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-      cursor: pointer;
-    }
-
-    .faq-question {
-      font-weight: bold;
-      margin: 0;
-    }
-
-    .faq-answer {
-      display: none;
-      margin-top: 10px;
-      font-size: 0.95rem;
-      line-height: 1.5;
-      color: var(--primary);
-    }
-
-    .faq-item.active .faq-answer {
-      display: block;
-    }
-  </style>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const items = document.querySelectorAll(".faq-item");
-      items.forEach(item => {
-        item.addEventListener("click", () => item.classList.toggle("active"));
-      });
-    });
-  </script>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
 </head>
-
 <body>
 
-<header class="header">
-  <div class="logo-area">
-    <a href="index.html"><img src="images/logo.png" class="logo"></a>
+  <!-- HEADER -->
+  <div class="header">
+    <div class="logo-wrap">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Velocè Logistics Logo" class="logo" />
+      </a>
+    </div>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="coverage.html">Coverage</a>
+      <a href="contact.html">Contact</a>
+      <a href="quote.html">Quote</a>
+    </div>
   </div>
-  <nav class="nav">
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="faq.html" class="nav-active">FAQ</a>
-  </nav>
-</header>
 
-<section class="subpage-hero">
-  <h1>Frequently Asked Questions</h1>
-  <p>Answers to the questions we get asked most often.</p>
-</section>
-
-<section>
-  <div class="subpage-content" style="max-width: 900px; margin: 0 auto;">
-
-    <div class="faq-item">
-      <p class="faq-question">How fast can you deliver?</p>
-      <p class="faq-answer">Most deliveries arrive within 2–4 hours depending on distance and urgency. Same-day service is always available.</p>
+  <!-- SUBPAGE HERO -->
+  <section class="sub-hero sub-hero-city">
+    <div class="sub-hero-overlay"></div>
+    <div class="sub-hero-content">
+      <h1>Frequently Asked Questions</h1>
+      <p>Quick answers to common questions about partnering with Velocè Logistics.</p>
     </div>
+  </section>
 
-    <div class="faq-item">
-      <p class="faq-question">Do you offer business accounts?</p>
-      <p class="faq-answer">Yes — we provide dedicated business courier plans, scheduled pickups, and discounted recurring routes.</p>
+  <!-- CONTENT -->
+  <section class="subpage-section">
+    <div class="subpage-inner">
+      <h2>General Questions</h2>
+
+      <h3>What types of shipments do you handle?</h3>
+      <p>
+        We primarily support parcel-sized shipments for last-mile delivery, route coverage, and regional runs.
+        Larger freight or special handling can be discussed on a case-by-case basis.
+      </p>
+
+      <h3>Do you work directly with shippers or only with carriers?</h3>
+      <p>
+        Our primary partnerships are with national and regional carriers, but we also support select direct
+        shipper and business-to-business customers.
+      </p>
+
+      <h3>How do we get a quote?</h3>
+      <p>
+        Use our <a href="quote.html">Request a Quote</a> page to share your route, volume, and service needs,
+        and we’ll follow up with a tailored proposal.
+      </p>
+
+      <h2>Operations & Coverage</h2>
+
+      <h3>What areas do you cover?</h3>
+      <p>
+        Our coverage is focused on specific metro and regional zones. Visit our
+        <a href="coverage.html">Coverage</a> page or contact us to discuss your location.
+      </p>
+
+      <h3>Can you support seasonal or peak volume?</h3>
+      <p>
+        Yes. We routinely plan for peak and seasonal surges, and can help you build a coverage model that
+        flexes with your volume.
+      </p>
     </div>
+  </section>
 
-    <div class="faq-item">
-      <p class="faq-question">Can I track my package?</p>
-      <p class="faq-answer">Absolutely. Enter your tracking number on our tracking page to see real-time updates.</p>
-    </div>
-
-    <div class="faq-item">
-      <p class="faq-question">What items can you deliver?</p>
-      <p class="faq-answer">Documents, parcels, retail goods, office supplies, medical essentials, small equipment — nearly anything under 75 lbs.</p>
-    </div>
-
-    <div class="faq-item">
-      <p class="faq-question">Do you offer after-hours delivery?</p>
-      <p class="faq-answer">Yes. After-hours deliveries are available with an additional fee. Call for immediate assistance.</p>
-    </div>
-
+  <!-- FOOTER -->
+  <div class="footer-links">
+    <a href="delivery.html">Delivery Request</a>
+    <span> | </span>
+    <a href="faq.html">FAQ</a>
   </div>
-</section>
 
-<footer class="footer">
-  <p>© 2025 Velocè Logistics — All Rights Reserved</p>
-</footer>
+  <div class="footer">
+    <p>&copy; 2025 Velocè Logistics. All rights reserved.</p>
+  </div>
 
 </body>
 </html>
