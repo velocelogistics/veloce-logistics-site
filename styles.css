@@ -69,7 +69,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 24px;
+  padding: 16px 24px;
   background-color: var(--surface);
   border-bottom: 1px solid var(--border);
   box-shadow: 0 2px 12px rgba(0,0,0,0.04);
@@ -79,13 +79,14 @@ h2 {
 }
 
 .logo {
-  height: 80px;
+  height: 100px;
   width: auto;
 }
 
 .nav {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   flex-wrap: wrap;
   gap: 6px;
 }
@@ -671,6 +672,13 @@ h2 {
    RESPONSIVE
 =========================== */
 
+@media (max-width: 1024px) {
+
+  .logo {
+    height: 80px;
+  }
+}
+
 @media (max-width: 768px) {
 
   .header {
@@ -688,7 +696,7 @@ h2 {
   }
 
   .logo {
-    height: 60px;
+    height: 64px;
   }
 
   section {
