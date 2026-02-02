@@ -38,6 +38,7 @@ body {
 
 h1, h2, h3 {
   margin-top: 0;
+  line-height: 1.15;
 }
 
 a {
@@ -50,7 +51,7 @@ a:hover {
 }
 
 section {
-  padding: 80px 24px;
+  padding: 72px 24px;
 }
 
 h2 {
@@ -118,22 +119,24 @@ h2 {
   text-align: center;
 }
 
-.hero-city {
-  background-image: url("/assets/hero-logistics-city.jpg");
-  background-size: cover;
-  background-position: center;
+.hero.hero-city {
+  background: url("/assets/hero-logistics-city.jpg") center / cover no-repeat #111 !important;
+  position: relative;
+  isolation: isolate;
 }
 
-.hero-city::before {
+.hero.hero-city::before {
   content: "";
   position: absolute;
   inset: 0;
+  z-index: 0;
   background: linear-gradient(
     115deg,
-    rgba(0, 0, 0, 0.58),
-    rgba(71, 5, 0, 0.28) 55%,
+    rgba(0, 0, 0, 0.34),
+    rgba(71, 5, 0, 0.14) 55%,
     rgba(0, 0, 0, 0.18)
   );
+  pointer-events: none;
 }
 
 .hero-content {
@@ -150,6 +153,7 @@ h2 {
   letter-spacing: -0.02em;
   color: var(--white);
   margin-bottom: 20px;
+  line-height: 1.05;
 }
 
 .hero-actions {
@@ -415,8 +419,6 @@ h2 {
   padding: 64px 24px;
 }
 
-
-
 .sub-hero-content {
   position: relative;
   max-width: 800px;
@@ -479,6 +481,7 @@ h2 {
 
 .section-cta {
   margin-top: 28px;
+  text-align: center;
 }
 
 .content-card {
@@ -603,7 +606,9 @@ h2 {
 }
 
 .form-card button {
-  width: 100%;
+  width: auto;
+  display: block;
+  margin: 8px auto 0;
   text-align: center;
 }
 
@@ -624,7 +629,15 @@ h2 {
   text-align: center;
   padding: 2rem 0 0;
   font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
+
+ .footer-links span {
+  color: rgba(17, 24, 39, 0.45);
+ }
 
 .footer-links a {
   display: inline-block;
@@ -640,9 +653,10 @@ h2 {
 
 .footer {
   background-color: var(--white);
-  padding: 20px;
+  padding: 26px;
   border-top: 1px solid rgba(0,0,0,0.07);
   text-align: center;
+  color: var(--text-muted);
 }
 
 /* ===========================
@@ -658,10 +672,15 @@ h2 {
 
   .nav {
     margin-top: 10px;
+    width: 100%;
+  }
+
+  .nav a {
+    padding: 9px 10px;
   }
 
   section {
-    padding: 40px 20px;
+    padding: 48px 20px;
   }
 
   .hero {
