@@ -51,7 +51,7 @@ a:hover {
 }
 
 section {
-  padding: 72px 24px;
+  padding: 68px 24px;
 }
 
 h2 {
@@ -79,7 +79,8 @@ h2 {
 }
 
 .logo {
-  height: 64px;
+  height: 80px;
+  width: auto;
 }
 
 .nav {
@@ -120,7 +121,7 @@ h2 {
 }
 
 .hero.hero-city {
-  background: url("/assets/hero-logistics-city.jpg") center / cover no-repeat #111 !important;
+  background: url("assets/hero-logistics-city.jpg") center / cover no-repeat #111 !important;
   position: relative;
   isolation: isolate;
 }
@@ -279,14 +280,15 @@ h2 {
   border-radius: var(--radius);
   border: 1px solid var(--border);
   box-shadow: var(--shadow-sm);
-  transition: 0.3s ease;
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
   text-align: left;
   display: flex;
   flex-direction: column;
 }
 
 .service-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
 }
 
 .service-card h3 {
@@ -369,6 +371,12 @@ h2 {
   border-radius: var(--radius);
   border: 1px solid var(--border);
   box-shadow: var(--shadow-sm);
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
 }
 
 .testimonial-text {
@@ -627,12 +635,12 @@ h2 {
 
 .footer-links {
   text-align: center;
-  padding: 2rem 0 0;
-  font-size: 1rem;
+  padding: 1.5rem 0 0;
+  font-size: 0.95rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
  .footer-links span {
@@ -641,14 +649,14 @@ h2 {
 
 .footer-links a {
   display: inline-block;
-  padding: 8px 10px;
+  padding: 7px 10px;
   border-radius: 999px;
   color: var(--maroon-dark);
   font-weight: 600;
 }
 
 .footer-links a:hover {
-  background-color: rgba(170, 31, 52, 0.08);
+  background-color: rgba(170, 31, 52, 0.06);
 }
 
 .footer {
@@ -679,8 +687,12 @@ h2 {
     padding: 9px 10px;
   }
 
+  .logo {
+    height: 60px;
+  }
+
   section {
-    padding: 48px 20px;
+    padding: 44px 20px;
   }
 
   .hero {
@@ -694,6 +706,17 @@ h2 {
 
   .hero-actions {
     gap: 10px;
+  }
+
+  .services-grid,
+  .testimonial-grid {
+    gap: 18px;
+  }
+
+  .service-card,
+  .testimonial-card {
+    width: 100%;
+    max-width: 420px;
   }
 
   .sub-hero {
