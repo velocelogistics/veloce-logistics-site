@@ -119,7 +119,7 @@ h2 {
 }
 
 .hero-city {
-  background-image: url("images/hero-city.webp");
+  background-image: url("/assets/hero-logistics-city.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -130,9 +130,9 @@ h2 {
   inset: 0;
   background: linear-gradient(
     115deg,
-    rgba(17, 24, 39, 0.78),
-    rgba(17, 24, 39, 0.35) 55%,
-    rgba(17, 24, 39, 0.10)
+    rgba(0, 0, 0, 0.58),
+    rgba(71, 5, 0, 0.28) 55%,
+    rgba(0, 0, 0, 0.18)
   );
 }
 
@@ -252,6 +252,14 @@ h2 {
   background-color: var(--surface);
 }
 
+.services-note {
+  margin: 18px auto 0;
+  max-width: 900px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.98rem;
+}
+
 .services-grid {
   display: flex;
   justify-content: center;
@@ -269,10 +277,23 @@ h2 {
   box-shadow: var(--shadow-sm);
   transition: 0.3s ease;
   text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
 .service-card:hover {
   transform: translateY(-6px);
+}
+
+.service-card h3 {
+  margin: 10px 0 10px;
+  font-size: 1.15rem;
+  letter-spacing: -0.01em;
+}
+
+.service-card p {
+  margin: 0;
+  color: var(--text-muted);
 }
 
 .service-icon {
@@ -407,12 +428,15 @@ h2 {
   margin-bottom: 8px;
   color: var(--white);
   letter-spacing: -0.01em;
+  font-weight: 800;
+  line-height: 1.15;
 }
 
 .sub-hero-content p {
   margin: 0;
   color: rgba(255,255,255,0.88);
   font-size: 1.05rem;
+  line-height: 1.55;
 }
 
 /* ===========================
@@ -483,6 +507,14 @@ h2 {
 
 .service-offering {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-offering-coming-soon {
+  background-color: rgba(17, 24, 39, 0.015);
+  border-style: dashed;
+  border-color: rgba(17, 24, 39, 0.18);
 }
 
 .service-offering h3 {
@@ -560,6 +592,9 @@ h2 {
   border: 1px solid rgba(17, 24, 39, 0.16);
   background-color: rgba(17, 24, 39, 0.02);
   color: var(--text);
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 140ms ease, box-shadow 140ms ease, background-color 140ms ease;
 }
 
 .form-card textarea {
@@ -577,7 +612,7 @@ h2 {
 .form-card select:focus {
   outline: none;
   border-color: rgba(170, 31, 52, 0.55);
-  box-shadow: 0 0 0 4px rgba(170, 31, 52, 0.16);
+  box-shadow: 0 0 0 3px rgba(170, 31, 52, 0.14);
   background-color: var(--surface);
 }
 
@@ -595,15 +630,12 @@ h2 {
   display: inline-block;
   padding: 8px 10px;
   border-radius: 999px;
+  color: var(--maroon-dark);
+  font-weight: 600;
 }
 
 .footer-links a:hover {
   background-color: rgba(170, 31, 52, 0.08);
-}
-
-.footer-links a {
-  color: var(--maroon-dark);
-  font-weight: 600;
 }
 
 .footer {
